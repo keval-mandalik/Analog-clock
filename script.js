@@ -1,14 +1,18 @@
     setInterval(() => {
 
-        let hour = document.getElementById("hour");
-        let minute = document.getElementById("minute");
-        let second = document.getElementById("second");
+        let dhour = document.getElementById("dhour");
+        let dminute = document.getElementById("dminute");
+        let dsecond = document.getElementById("dsecond");
 
         date = new Date();
         hourTime = date.getHours();
         minuteTime = date.getMinutes();
         secondTime = date.getSeconds();
         
+        dhour.innerHTML = hourTime;
+        dminute.innerHTML = minuteTime;
+        dsecond.innerHTML = secondTime;
+
         hourRotation = 30*hourTime + minuteTime/2;
         minuteRotation = 6*minuteTime + secondTime/10;
         secondRotation = 6*secondTime;

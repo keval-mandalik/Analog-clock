@@ -1,3 +1,10 @@
+h2{
+    display: block;
+    margin: 5px auto;
+    width: 50%;
+    text-align: center;
+}
+
 #clockContainer{
     position: relative;
     margin: auto;
